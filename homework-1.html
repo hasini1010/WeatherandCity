@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="all">
+    <div class="first"><i class="fa-solid fa-cloud-sun"></i></div>
+    <div class="head"><h1>Currently 21&#176 in India</h1></div>
+    <div class="head2"><p>13&#176 / <b>23&#176</b><p></div>
+    <div class="fs">  
+    <p class="text"><i class="fa-solid fa-cloud-showers-heavy"></i><b>Tomorrow</b></p>
+    <p class="num">10&#176 / <b>22&#176</b><p>
+    </div>   
+    <div class="ss">  
+    <p  class="text"><i class="fa-solid fa-cloud-sun"></i><b>Saturday</b></p>
+    <p class="num">15&#176 / <b>17&#176</b> <p>
+    </div>     
+    <div class="ts">  
+    <p  class="text"><i class="fa-regular fa-sun"></i><b>Sunday</b></p>
+    <p class="num">25&#176 /<b>28&#176</b><p>
+    </div>    
+    <button class="btn">Change City</button>   
+    <p class="Hasini"><em>Code by Hasini Kanchetty</em></p>
+    </div> 
+    <script>
+        function changeCity() {
+        let city = prompt("What city do you live in?");
+        let temperature = prompt("What temperature is it?");
+        let heading = document.querySelector("h1");
+        if (temperature < 0) {
+          heading.innerHTML =
+            "☹️<br />Currently " + temperature + "°C in " + city;
+        } else {
+          heading.innerHTML =
+            "😄<br />Currently " + temperature + "°C in " + city;
+        }
+      }
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", changeCity);
+</script>
+</body>
+</html>

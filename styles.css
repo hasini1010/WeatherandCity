@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+    border: 1px solid white;
+    padding: 15 px;
+    font-size: 18 px;
+    border-radius: 4px;
+}
+h2{
+    text-align: center;
+}
+img{
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+p{
+    line-height: 1.5;
+    font-size: 13px;
+    margin: 20px 0px 10px;
+}
+.con{
+    text-decoration: none;
+    font-size: 11px;
+}
+.con:hover{
+    text-decoration: underline;
+}
+button{
+    display:block;
+    margin: 20px auto;
+    font-size: 24px;
+    border-radius: 6px;
+    border:none;
+    padding: 15px 20px;
+    background-color: #113f67;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transition: all 200ms ease-in-out;
+}
+button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding: 30px 60px;
+}
+.demo-project {
+    box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    border-radius: 10px;
+    color: #fff;
+    width: 50%;
+    padding: 30px;
+    margin: 30px auto;
+    font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+}
+.Hasini{
+    opacity: 0;
+    color: rgba(34, 30, 30, 0.3);
+}
